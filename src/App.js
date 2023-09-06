@@ -2,6 +2,7 @@ import "./App.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import MainLayout from "./views/MainLayout";
+import Linechart from "./components/chart/LineChart";
 
 export default function App() {
   const [connection, setConnection] = useState("");
@@ -46,7 +47,6 @@ export default function App() {
   return (
     <>
       <MainLayout />
-      <div></div>
     </>
   );
 }

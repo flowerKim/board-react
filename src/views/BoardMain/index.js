@@ -1,8 +1,12 @@
 import React from "react";
+import Linechart from "../../components/chart/LineChart";
 
 function BoardMain() {
   return (
-    <div style={{ height: "100vh", backgroundColor: "blue" }}>Board Main</div>
+    <div style={{ marginTop: "10vh", height: "100vh" }}>
+      Board Main
+      <Linechart />
+    </div>
   );
 }
 
