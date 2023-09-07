@@ -5,6 +5,7 @@ import BoardMain from "../BoardMain";
 import useUserStore from "../../stores/useStore";
 import { useCookies } from "react-cookie";
 import axios from "axios";
+import LeftMenu from "../Navigation/LeftMenu";
 
 function MainLayout() {
   const [boardResponse, setBoardResponse] = useState("");
@@ -38,7 +39,10 @@ function MainLayout() {
   return (
     <>
       <Navigation />
-      {user ? <BoardMain /> : <Authentication />}
+      <div className="AppContainer">
+        <LeftMenu />
+        {user ? <BoardMain /> : <Authentication />}
+      </div>
     </>
   );
 }

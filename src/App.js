@@ -1,4 +1,4 @@
-import "./App.css";
+import "./assets/css/App.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import MainLayout from "./views/MainLayout";
